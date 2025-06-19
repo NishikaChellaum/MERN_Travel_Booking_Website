@@ -1,0 +1,249 @@
+/* FlightCard.css */
+
+#flightCardsBody {
+    padding: 2rem;
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .search-bar-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar {
+    padding: 10px 20px;
+    width: 60%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .main-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  #FlightContianer {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  #FlightContianer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  #Section1 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  #SectionLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .deal-tag {
+    background: #ff4757;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+  
+  .section-2 {
+    flex-wrap: wrap;
+  }
+  
+  .devider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .devider-1 {
+    flex: 2;
+    border-right: 1px solid #ccc;
+    padding-right: 1rem;
+  }
+  
+  .devider-2 {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  
+  .flight-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .flight-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .time-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .time-box p:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .line {
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+  }
+  
+  .total-time p:first-child {
+    font-weight: bold;
+  }
+  
+  .flight-price {
+    text-align: right;
+  }
+  
+  .book-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #1c5980;
+  }
+  
+  .section-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+  
+  .flight-footer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .meal-section,
+  .emissions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  select {
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .flight-price {
+      text-align: left;
+      margin-top: 1rem;
+    }
+  
+    .time-section {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .line {
+      display: none;
+    }
+  
+    #FlightContianer {
+      padding: 1rem;
+    }
+  }
+  /* Styling for the toggle button container */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Styling for individual buttons */
+.toggle-buttons button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.toggle-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Active button styling */
+.toggle-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .toggle-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-buttons button {
+    margin: 5px 0;
+    width: 100%;
+  }
+}

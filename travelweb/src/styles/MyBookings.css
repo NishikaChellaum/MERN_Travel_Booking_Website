@@ -1,0 +1,67 @@
+/* MyBookings Page Specific Styling */
+#myBookings {
+    padding: 20px;
+    margin-top: 60px; /* To avoid content being hidden under the navbar */
+    min-height: calc(100vh - 160px); /* Ensures the content stretches to fill the space above the footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  thead {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  tbody tr {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #e9f4ff;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e03e3e;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,105 @@
+#contact {
+  height: 100vh;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers text content */
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#contactImg {
+  height: 400px;
+  opacity: 0.9;
+  width: 100%; /* Make the image take up full width */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+#contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 40px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc {
+  width: 50%; /* Set a reasonable width */
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto; /* Center the content */
+}
+
+h2 {
+  font-size: 20px; /* Adjust font size for better readability */
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the input fields */
+  width: 100%;
+}
+
+.contactInfo input {
+  width: 40%; /* Set a reasonable width for inputs */
+  border: none;
+  border-bottom: 2px solid;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid;
+  margin-bottom: 20px; /* Add some space between inputs */
+}
+
+#btn {
+  justify-content: center;
+  width: 150px; /* Make the button wider */
+  border-radius: 40px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #00adfd 0%,
+    #00c6fe 51%,
+    #00e3fe 100%
+  );
+  padding: 10px 20px; /* Add some padding to the button */
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #contact {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #contactText {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .desc {
+    width: 90%; /* Set a larger width for smaller screens */
+  }
+
+  .contactInfo input {
+    width: 80%; /* Adjust input width for smaller screens */
+  }
+
+  #btn {
+    width: 100%; /* Full width button on smaller screens */
+  }
+}

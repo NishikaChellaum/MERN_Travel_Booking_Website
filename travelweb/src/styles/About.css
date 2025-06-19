@@ -1,0 +1,161 @@
+#about {
+  padding-top: 8%;
+  margin-bottom: 50px;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.desc {
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.about-box {
+  background-color: aqua;
+  width: 30%;
+  min-width: 260px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.about-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 123, 255, 0.3);
+}
+
+.icon {
+  font-size: 60px;
+  color: #007bff;
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 50%; /* This makes it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;  /* Set the width to a fixed size */
+  height: 80px; /* Set the height to the same value */
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#00adfd, #00e3fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* For small screens like tablets */
+@media screen and (max-width: 768px) {
+  .desc {
+    width: 90%;
+  }
+
+  .about-box {
+    width: 80%;
+  }
+}
+
+/* For large screens (TVs, projectors, wide monitors, etc.) */
+@media only screen and (min-width: 1200px) {
+  .main-heading {
+    font-size: 50px; /* Larger heading for big screens */
+  }
+
+  #text {
+    gap: 40px; /* Add more spacing between sections */
+  }
+
+  .desc {
+    width: 50%; /* Make the description section wider */
+    font-size: 22px; /* Increase the font size for readability */
+  }
+
+  .about-box {
+    width: 22%; /* Adjust box width to avoid being too wide on large screens */
+    padding: 40px; /* Increase padding for better spacing */
+    font-size: 18px; /* Increase font size inside the boxes */
+  }
+
+  .icon {
+    font-size: 80px; /* Increase icon size */
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-heading {
+    font-size: 28px; /* Larger card heading */
+  }
+
+  .about-box p {
+    font-size: 18px; /* Larger text inside the box */
+  }
+}
+
+/* For ultra-large screens (4K, high-res projectors) */
+@media only screen and (min-width: 1800px) {
+  .main-heading {
+    font-size: 70px; /* Huge heading for ultra-large screens */
+  }
+
+  .desc {
+    width: 40%; /* Further increase width for larger screens */
+    font-size: 26px; /* Larger text for readability */
+  }
+
+  .about-box {
+    width: 18%; /* Adjust box width to ensure it's well spaced */
+    padding: 50px; /* More padding for better balance */
+    font-size: 20px; /* Increase text size */
+  }
+
+  .icon {
+    font-size: 100px; /* Larger icons */
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-heading {
+    font-size: 32px; /* Increase heading size */
+  }
+
+  .about-box p {
+    font-size: 20px; /* Larger text inside the boxes */
+  }
+}

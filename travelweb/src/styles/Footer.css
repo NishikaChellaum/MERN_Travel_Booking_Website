@@ -1,0 +1,50 @@
+#footer {
+  margin-top: 100px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(66, 185, 235, 0.95);
+  width: 100%;
+  padding-top: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: auto;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textPart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.footer-heading {
+  font-size: 5rem;
+  color: #040d3e;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  font-size: 20px;
+  color: #040d3e;
+  max-width: 500px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  color: #040d3e;
+  align-items:flex-end;  /* Ensures the icons align to the left */
+  justify-content: flex-end;  /* Aligns the items to the start of the container */
+}
